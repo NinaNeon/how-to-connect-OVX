@@ -5,9 +5,8 @@
 
 1. 前往 Ubuntu 官方網站下載 ISO 映像檔：
    https://releases.ubuntu.com/22.04/
-
-2. 將 ISO 檔燒錄到 USB：
-   可使用 `Rufus`（Windows）或 `balenaEtcher`（Linux/macOS）進行燒錄。
+![image](https://github.com/user-attachments/assets/14c8c420-4af0-4504-aacf-2afa7ac30548)
+2. 將 ISO 檔燒錄到 USB：【Windows 和 Ubuntu 双系统的安装和卸载】 https://www.bilibili.com/video/BV1554y1n7zv/?p=4&share_source=copy_web&vd_source=7aae493e7da36f090c4c02123b0dd11b   
 
 3. 使用 USB 開機並依畫面指示安裝 Ubuntu。
 
