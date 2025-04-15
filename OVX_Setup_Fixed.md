@@ -10,9 +10,9 @@
 ![image](https://github.com/user-attachments/assets/c2091bdb-652b-48f5-adc9-d638a2da60a8)
 使用ventoy燒錄
 
-4. 使用 USB 開機並依畫面指示安裝 Ubuntu。
+3. 使用 USB 開機並依畫面指示安裝 Ubuntu。
 
-5. 安裝流程建議參考以下影片教學：
+4. 安裝流程建議參考以下影片教學：
 【两分半钟完成VMware安装及Linux-Ubuntu安装（全程无废话）】 https://www.bilibili.com/video/BV1W34y1k7ge/?share_source=copy_web&vd_source=7aae493e7da36f090c4c02123b0dd11b
 
 ![image](https://github.com/user-attachments/assets/86da96fc-7baf-46d7-8619-dad22b691722)
@@ -57,10 +57,11 @@ sudo apt install ./google-chrome-stable_current_amd64.deb
 ![image](https://github.com/user-attachments/assets/c89aafad-7442-4e3e-83c9-e80569018985)
 5. 點選下載 Nucleus Launcher for Linux。
 
-6. 下載後。
+6. 下載後如果缺少fuse會無法執行。
+
 ![image](https://github.com/user-attachments/assets/c968095d-d595-474b-b62c-7e1b57408e04)
 
-7. 打開 Terminal，貼上以下指令安裝fuse並執行.AppImage
+打開 Terminal，貼上以下指令安裝fuse並執行.AppImage
 
 ```bash
 sudo apt update
@@ -68,7 +69,7 @@ sudo apt install libfuse2
 cd ~/Downloads
 chmod +x omniverse-launcher-linux.AppImage
 ```
-8. 第一次開啟時會要求登入（使用自己前面登過的帳號密碼）。
+7. 第一次開啟時會要求登入（使用自己前面登過的帳號密碼）。
 
 ![image](https://github.com/user-attachments/assets/89fc235d-dff8-4f31-aecf-c4ca3797e424)
 
@@ -78,7 +79,7 @@ chmod +x omniverse-launcher-linux.AppImage
 
 ![image](https://github.com/user-attachments/assets/d2004051-9dd2-4ce2-9505-cdb101f65151)
 
-9.先做其他步驟：打開 Terminal，貼上以下指令Clone j3soon/omni-farm-isaac且Install jq for JSON parsing
+8.先做其他步驟：打開 Terminal，貼上以下指令Clone j3soon/omni-farm-isaac且Install jq for JSON parsing
 
 ```bash
 git clone https://github.com/j3soon/omni-farm-isaac.git
@@ -90,7 +91,7 @@ sudo apt-get install -y jq
 ```
 
 
-10.在omni-farm-isaac新建secret資料夾
+9.在omni-farm-isaac新建secret資料夾
 
 ![image](https://github.com/user-attachments/assets/4b2b1c2a-4ff6-4c98-8999-41bcf684a8fe)
 
@@ -105,7 +106,7 @@ secrets/env.sh, for example:
 
 ![image](https://github.com/user-attachments/assets/3e6d7bb7-b708-4486-96aa-26ff6447f9d6)
 
-11.打開 Terminal，貼上以下指令 執行這個 secrets/env.sh
+10.打開 Terminal，貼上以下指令 執行這個 secrets/env.sh
 
 ```bash
 cd omni-farm-isaac
@@ -114,7 +115,7 @@ source secrets/env.sh
 ## 步驟三：安裝OpenVPN 3 並連線
 
 
-12.參考[script
+11.參考[script
 ](https://github.com/j3soon/omni-farm-isaac) 中的[  guide](https://openvpn.net/cloud-docs/tutorials/configuration-tutorials/connectors/operating-systems/linux/tutorial--learn-to-install-and-control-the-openvpn-3-client.html)安裝openvpn3，打開 Terminal，貼上以下指令
 
 ```bash
@@ -126,9 +127,9 @@ sudo apt update
 sudo apt install openvpn3
 ```
 
-13. 準備好你的 .ovpn 檔案，放在合適位置（secret)，我有改名變成client.ovpn
+12. 準備好你的 .ovpn 檔案，放在合適位置（secret)，我有改名變成client.ovpn
 
-14. 匯入並啟用 VPN：
+13. 匯入並啟用 VPN：
 
 ```bash
 cd ~/omni-farm-isaac
@@ -140,7 +141,7 @@ scripts/vpn/connect.sh
 
 ### 步驟四：開啟 Farm 操作頁面
 
-1. 開啟 Chrome，輸入以下網址：
+14. 開啟 Chrome，輸入以下網址：
 [  farm](http://farm.tpe1.local/queue/management/dashboard/)
 
 
@@ -151,14 +152,15 @@ http://farm.tpe1.local/queue/management/dashboard/
 
 ## 步驟五：登入Nucleus Launcher
 
+15.connect to server 中填入伺服器地址
+
 ![image](https://github.com/user-attachments/assets/34ed8e74-157f-4bdb-9f69-efd7394c0ee6)
-connect to server 中填入伺服器地址
 
 ```bash
 nucleus.tpe1.loacl
 ```
 
-10. connect to server時會要求登入（使用公司提供帳號密碼）。密碼nvidia
+16. connect to server時會要求登入（使用公司提供帳號密碼）。密碼nvidia
 
 
 ![image](https://github.com/user-attachments/assets/91cd1ce5-3c77-4bd0-a100-6b97ccbcff44)
@@ -166,7 +168,7 @@ nucleus.tpe1.loacl
 ![image](https://github.com/user-attachments/assets/ab58f87d-c725-47d7-8c19-36fa2e53d063)
    
 
-11. 登入後使用方式：在project資料夾內建立個人資料夾
+17. 登入後使用方式：在project資料夾內建立個人資料夾
    滑鼠右鍵可選「上傳」至伺服器。
 
 ![image](https://github.com/user-attachments/assets/ee35cfbc-cc47-4051-a4cd-eb27e61c14fa)
