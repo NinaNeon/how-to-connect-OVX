@@ -135,18 +135,22 @@ scripts/vpn/connect.sh
 ### 步驟四：開啟 Farm 操作頁面
 
 1. 開啟 Chrome，輸入以下網址：
-   https://farm.ovx.nvidia.com
+[  farm](http://farm.tpe1.local/queue/management/dashboard/)
 
-> 提醒：建議將此網址加入書籤。
 
-![farm-home](https://example.com/images/farm-home.png)
+```bash
+http://farm.tpe1.local/queue/management/dashboard/
+```
+![image](https://github.com/user-attachments/assets/085361e5-d47e-4250-a8ef-f0e271a6fff1)
 
----
+## 步驟五：登入Nucleus Launcher
 
-10. connect to server時會要求登入（使用公司提供帳號密碼）。
+10. connect to server時會要求登入（使用公司提供帳號密碼）。密碼nvidia
+
 
    ![image](https://github.com/user-attachments/assets/91cd1ce5-3c77-4bd0-a100-6b97ccbcff44)
-   
+
+![image](https://github.com/user-attachments/assets/ab58f87d-c725-47d7-8c19-36fa2e53d063)
    
 
 11. 登入後使用方式：
