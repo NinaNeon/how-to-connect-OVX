@@ -5,14 +5,19 @@
 
 1. 前往 Ubuntu 官方網站下載 ISO 映像檔：
    https://releases.ubuntu.com/22.04/
+
+   
 <img src="https://github.com/user-attachments/assets/14c8c420-4af0-4504-aacf-2afa7ac30548" alt="image" width="400"/>
-2. 將 ISO 檔燒錄到 USB：【Windows 和 Ubuntu 双系统的安装和卸载:制作Ubuntu安装盘】 【Windows11 安装 Ubuntu 避坑指南】 https://www.bilibili.com/video/BV1Cc41127B9/?p=4&share_source=copy_web&vd_source=7aae493e7da36f090c4c02123b0dd11b
+
+
+3. 將 ISO 檔燒錄到 USB：【Windows 和 Ubuntu 双系统的安装和卸载:制作Ubuntu安装盘】 【Windows11 安装 Ubuntu 避坑指南】 https://www.bilibili.com/video/BV1Cc41127B9/?p=4&share_source=copy_web&vd_source=7aae493e7da36f090c4c02123b0dd11b
+
 <img src="https://github.com/user-attachments/assets/c2091bdb-652b-48f5-adc9-d638a2da60a8" alt="image" width="400"/>
 使用ventoy燒錄
 
-3. 使用 USB 開機並依畫面指示安裝 Ubuntu。
+4. 使用 USB 開機並依畫面指示安裝 Ubuntu。
 
-4. 安裝流程建議參考以下影片教學：
+5. 安裝流程建議參考以下影片教學：
 【两分半钟完成VMware安装及Linux-Ubuntu安装（全程无废话）】 https://www.bilibili.com/video/BV1W34y1k7ge/?share_source=copy_web&vd_source=7aae493e7da36f090c4c02123b0dd11b
 
 <img src="https://github.com/user-attachments/assets/86da96fc-7baf-46d7-8619-dad22b691722" alt="image" width="400"/>
@@ -29,7 +34,11 @@
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 ```
+
+
 <img src="https://github.com/user-attachments/assets/38f974cf-4dd7-4a26-a7a2-741d1c0b2a2a" alt="image" width="400"/>
+
+
 也可以去網站[安裝Chrome官網：自動偵測您的作業系統](https://www.google.com.tw/chrome/browser/desktop/index.html )下載，打開 Terminal，貼上以下指令安裝 Chrome
 ```bash
 cd ~/Downloads
@@ -41,11 +50,14 @@ sudo apt install ./google-chrome-stable_current_amd64.deb
 ---
 
 ## 步驟二：安裝Nucleus Launcher
-建議參考以下網站教學：
+建議參考以下網站教學：[ NVIDIA Omniverse launcher下载](https://blog.csdn.net/AmbitiousTyj/article/details/139855388)    
+
+
 <img src="https://github.com/user-attachments/assets/58629c13-b0f4-4243-b8d9-da6a8e20ff85" alt="image" width="400"/>
-[ NVIDIA Omniverse launcher下载](https://blog.csdn.net/AmbitiousTyj/article/details/139855388)
 
 1. 開啟 Chrome，前往：[  Nucleus Launcher官網](https://www.nvidia.com/en-us/omniverse/)
+
+
 <img src="https://github.com/user-attachments/assets/34389b54-9582-440e-a8b6-f0961cf002a0" alt="image" width="400"/>
 
 2.點Start Developing
@@ -58,6 +70,9 @@ sudo apt install ./google-chrome-stable_current_amd64.deb
 
 <img src="https://github.com/user-attachments/assets/f91a6ce5-a9e6-42eb-b3e9-c63ae164f59f" alt="image" width="400"/>
 <img src="https://github.com/user-attachments/assets/c89aafad-7442-4e3e-83c9-e80569018985" alt="image" width="400"/>
+
+
+
 5. 點選下載 Nucleus Launcher for Linux。
 
 6. 下載後如果缺少fuse會無法執行。
@@ -99,6 +114,8 @@ sudo apt-get install -y jq
 <img src="https://github.com/user-attachments/assets/4b2b1c2a-4ff6-4c98-8999-41bcf684a8fe" alt="image" width="400"/>
 
 放入從
+
+
 <img src="https://github.com/user-attachments/assets/7da73242-5d58-4a4b-aae9-149aa0818db9" alt="image" width="400"/>
 
 下載的env.sh和client.ovpn
@@ -151,11 +168,15 @@ scripts/vpn/connect.sh
 ```bash
 http://farm.tpe1.local/queue/management/dashboard/
 ```
+
+
 <img src="https://github.com/user-attachments/assets/085361e5-d47e-4250-a8ef-f0e271a6fff1" alt="image" width="400"/>
 
 ## 步驟五：登入Nucleus Launcher
 
 15.connect to server 中填入伺服器地址
+
+
 
 <img src="https://github.com/user-attachments/assets/34ed8e74-157f-4bdb-9f69-efd7394c0ee6" alt="image" width="400"/>
 
