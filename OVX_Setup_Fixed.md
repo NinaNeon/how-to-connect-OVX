@@ -37,7 +37,7 @@ sudo apt install ./google-chrome-stable_current_amd64.deb
 
 ---
 
-## 步驟二：安裝並登入 Nucleus Launcher
+## 步驟二：安裝Nucleus Launcher
 建議參考以下網站教學：
 ![image](https://github.com/user-attachments/assets/58629c13-b0f4-4243-b8d9-da6a8e20ff85)
 [ NVIDIA Omniverse launcher下载](https://blog.csdn.net/AmbitiousTyj/article/details/139855388)
@@ -105,7 +105,7 @@ secrets/env.sh, for example:
 cd omni-farm-isaac
 source secrets/env.sh
 ```
-## 步驟四：安裝 OpenVPN 3 並連線
+## 步驟三：安裝OpenVPN 3 並連線
 
 
 12.參考[script
@@ -132,7 +132,7 @@ scripts/vpn/connect.sh
 ```
 
 
-### 步驟三：開啟 Farm 操作頁面
+### 步驟四：開啟 Farm 操作頁面
 
 1. 開啟 Chrome，輸入以下網址：
    https://farm.ovx.nvidia.com
