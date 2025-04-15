@@ -6,15 +6,16 @@
 1. 前往 Ubuntu 官方網站下載 ISO 映像檔：
    https://releases.ubuntu.com/22.04/
 ![image](https://github.com/user-attachments/assets/14c8c420-4af0-4504-aacf-2afa7ac30548)
-2. 將 ISO 檔燒錄到 USB：【Windows 和 Ubuntu 双系统的安装和卸载】 https://www.bilibili.com/video/BV1554y1n7zv/?p=4&share_source=copy_web&vd_source=7aae493e7da36f090c4c02123b0dd11b   
+2. 將 ISO 檔燒錄到 USB：【Windows 和 Ubuntu 双系统的安装和卸载:制作Ubuntu安装盘】 【Windows11 安装 Ubuntu 避坑指南】 https://www.bilibili.com/video/BV1Cc41127B9/?p=4&share_source=copy_web&vd_source=7aae493e7da36f090c4c02123b0dd11b
+![image](https://github.com/user-attachments/assets/c2091bdb-652b-48f5-adc9-d638a2da60a8)
+使用ventoy燒錄
 
-3. 使用 USB 開機並依畫面指示安裝 Ubuntu。
+4. 使用 USB 開機並依畫面指示安裝 Ubuntu。
 
-4. 安裝流程建議參考以下影片教學：
-   https://www.youtube.com/watch?v=F5U6zLrP_bw
+5. 安裝流程建議參考以下影片教學：
+【两分半钟完成VMware安装及Linux-Ubuntu安装（全程无废话）】 https://www.bilibili.com/video/BV1W34y1k7ge/?share_source=copy_web&vd_source=7aae493e7da36f090c4c02123b0dd11b
 
-![ubuntu-install](https://example.com/images/ubuntu-install.png)
-
+![image](https://github.com/user-attachments/assets/86da96fc-7baf-46d7-8619-dad22b691722)
 ---
 
 ## 步驟一：安裝 Google Chrome
