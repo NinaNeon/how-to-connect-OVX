@@ -57,21 +57,67 @@ sudo apt install ./google-chrome-stable_current_amd64.deb
 ![image](https://github.com/user-attachments/assets/c89aafad-7442-4e3e-83c9-e80569018985)
 5. 點選下載 Nucleus Launcher for Linux。
 
-6. 下載後解壓縮並執行。
+6. 下載後。
+![image](https://github.com/user-attachments/assets/c968095d-d595-474b-b62c-7e1b57408e04)
 
-7. 詳細步驟參考官方教學文件：
-   https://docs.omniverse.nvidia.com/launcher/latest/install-guide-linux.html
+7. 打開 Terminal，貼上以下指令安裝fuse並執行.AppImage
 
-8. 第一次開啟時會要求登入（使用公司提供帳號密碼）。
+```bash
+sudo apt update
+sudo apt install libfuse2
+cd ~/Downloads
+chmod +x omniverse-launcher-linux.AppImage
+```
+8. 第一次開啟時會要求登入（使用自己前面登過的帳號密碼）。
 
-9. 登入後使用方式：
-   檔案總管中選檔案，滑鼠右鍵可選「上傳」至伺服器。
+![image](https://github.com/user-attachments/assets/89fc235d-dff8-4f31-aecf-c4ca3797e424)
 
-![nucleus-launcher-login](https://example.com/images/nucleus-launcher-login.png)
+![image](https://github.com/user-attachments/assets/50cb2e49-1beb-4836-97bf-0d2fd313902e)
 
----
+![image](https://github.com/user-attachments/assets/81fee6a0-4c69-42eb-9d63-2a64e6c927a4)
 
-## 步驟三：開啟 Farm 操作頁面
+![image](https://github.com/user-attachments/assets/d2004051-9dd2-4ce2-9505-cdb101f65151)
+
+9.先做其他步驟：打開 Terminal，貼上以下指令Clone j3soon/omni-farm-isaac且Install jq for JSON parsing
+
+```bash
+git clone https://github.com/j3soon/omni-farm-isaac.git
+cd omni-farm-isaac
+
+sudo apt-get update
+sudo apt-get install -y jq
+
+```
+![image](https://github.com/user-attachments/assets/25afd8d3-b09f-4269-9c7d-9b31d1d555b4)
+
+10.新建secret資料夾 放入從![image](https://github.com/user-attachments/assets/4b2b1c2a-4ff6-4c98-8999-41bcf684a8fe)
+下載的env.sh和client.ovpn
+
+![image](https://github.com/user-attachments/assets/9cb86f5e-7f15-4924-83b6-52eca62c6fee)
+
+secrets/env.sh, for example:
+
+![image](https://github.com/user-attachments/assets/3e6d7bb7-b708-4486-96aa-26ff6447f9d6)
+
+11.打開 Terminal，貼上以下指令 執行這個 secrets/env.sh
+
+```bash
+cd omni-farm-isaac
+source secrets/env.sh
+```
+12.參考[script
+](https://github.com/j3soon/omni-farm-isaac) 中的[  guide](https://openvpn.net/cloud-docs/tutorials/configuration-tutorials/connectors/operating-systems/linux/tutorial--learn-to-install-and-control-the-openvpn-3-client.html)安裝openvpn3，打開 Terminal，貼上以下指令
+
+```bash
+sudo snap install curl
+sudo mkdir -p /etc/apt/keyrings && curl -fsSL https://packages.openvpn.net/packages-repo.gpg | sudo tee /etc/apt/keyrings/openvpn.asc
+DISTRO=$(lsb_release -c -s)
+echo "deb [signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net/openvpn3/debian $DISTRO main" | sudo tee /etc/apt/sources.list.d/openvpn-packages.list
+sudo apt update
+sudo apt install openvpn3
+```
+
+### 步驟三：開啟 Farm 操作頁面
 
 1. 開啟 Chrome，輸入以下網址：
    https://farm.ovx.nvidia.com
@@ -81,6 +127,21 @@ sudo apt install ./google-chrome-stable_current_amd64.deb
 ![farm-home](https://example.com/images/farm-home.png)
 
 ---
+
+10. connect to server時會要求登入（使用公司提供帳號密碼）。
+
+   ![image](https://github.com/user-attachments/assets/91cd1ce5-3c77-4bd0-a100-6b97ccbcff44)
+   
+   
+
+11. 登入後使用方式：
+   滑鼠右鍵可選「上傳」至伺服器。
+
+![nucleus-launcher-login](https://example.com/images/nucleus-launcher-login.png)
+
+---
+
+
 
 ## 步驟四：安裝 OpenVPN 3 並連線
 
