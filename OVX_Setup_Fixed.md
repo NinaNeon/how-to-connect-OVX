@@ -88,9 +88,11 @@ sudo apt-get update
 sudo apt-get install -y jq
 
 ```
-![image](https://github.com/user-attachments/assets/25afd8d3-b09f-4269-9c7d-9b31d1d555b4)
 
-10.新建secret資料夾 放入從![image](https://github.com/user-attachments/assets/4b2b1c2a-4ff6-4c98-8999-41bcf684a8fe)
+10.新建secret資料夾 放入從
+
+![image](https://github.com/user-attachments/assets/4b2b1c2a-4ff6-4c98-8999-41bcf684a8fe)
+
 下載的env.sh和client.ovpn
 
 ![image](https://github.com/user-attachments/assets/9cb86f5e-7f15-4924-83b6-52eca62c6fee)
