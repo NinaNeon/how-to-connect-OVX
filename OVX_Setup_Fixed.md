@@ -105,6 +105,9 @@ secrets/env.sh, for example:
 cd omni-farm-isaac
 source secrets/env.sh
 ```
+## 步驟四：安裝 OpenVPN 3 並連線
+
+
 12.參考[script
 ](https://github.com/j3soon/omni-farm-isaac) 中的[  guide](https://openvpn.net/cloud-docs/tutorials/configuration-tutorials/connectors/operating-systems/linux/tutorial--learn-to-install-and-control-the-openvpn-3-client.html)安裝openvpn3，打開 Terminal，貼上以下指令
 
@@ -116,6 +119,18 @@ echo "deb [signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net
 sudo apt update
 sudo apt install openvpn3
 ```
+
+13. 準備好你的 .ovpn 檔案，放在合適位置（secret)，我有改名變成client.ovpn
+
+14. 匯入並啟用 VPN：
+
+```bash
+cd ~/omni-farm-isaac
+source secrets/env.sh
+scripts/vpn/install_config.sh client.ovpn
+scripts/vpn/connect.sh
+```
+
 
 ### 步驟三：開啟 Farm 操作頁面
 
@@ -143,23 +158,7 @@ sudo apt install openvpn3
 
 
 
-## 步驟四：安裝 OpenVPN 3 並連線
 
-1. 在 Terminal 中貼上以下指令安裝 OpenVPN 3：
-
-```bash
-sudo apt update
-sudo apt install openvpn3
-```
-
-2. 準備好你的 .ovpn 檔案，放在合適位置（例如 ~/Downloads/config.ovpn）
-
-3. 匯入並啟用 VPN：
-
-```bash
-openvpn3 config-import --config ~/Downloads/config.ovpn --persistent
-openvpn3 session-start --config config.ovpn
-```
 
 4. 中斷連線：
 
