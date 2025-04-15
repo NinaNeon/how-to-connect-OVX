@@ -212,6 +212,98 @@ docker push registry.ovx.nvidia.com/your_project/my_image:latest
 
 
 
+
+
+
+
+## 步驟五：啟動 Omniverse Launcher（Terminal）
+
+```bash
+~/omniverse-launcher/launch.sh
+```
+
+> 若安裝於其他位置，請依實際路徑修正。
+
+![launcher-start](https://example.com/images/launcher-start.png)
+
+---
+
+## 步驟六：提交 Task 到 Farm
+
+1. 登入 Farm 後選擇你的 Workspace。
+
+2. 點選「Submit Task」或「Create Job」。
+
+3. 選擇對應的 Docker 映像（內建或自定義）。
+
+4. 設定參數後按下 Submit。
+
+![submit-task](https://example.com/images/submit-task.png)
+
+---
+
+## 步驟七：傳送 Docker 映像
+
+1. 登入 Registry：
+
+```bash
+docker login registry.ovx.nvidia.com
+```
+
+2. 標記與上傳你的映像：
+
+```bash
+docker tag my_image:latest registry.ovx.nvidia.com/your_project/my_image:latest
+docker push registry.ovx.nvidia.com/your_project/my_image:latest
+```
+
+3. 在 Farm 建立任務時選你上傳的映像即可。
+
+![upload-docker](https://example.com/images/upload-docker.png)
+
+---
+
+## 步驟八：查看任務結果與輸出
+
+1. 提交後到 Tasks 頁面觀察狀態。
+
+2. 成功會顯示綠色，點進去可看 log 與輸出檔案。
+
+![task-result](https://example.com/images/task-result.png)
+
+---
+
+## 附註與錯誤排解
+
+
+
+
+4. 中斷連線：
+
+```bash
+openvpn3 session-manage --config config.ovpn --disconnect
+```
+
+5. 開機後手動連線 VPN：
+
+```bash
+openvpn3 session-start --config config.ovpn
+```
+
+![vpn-connected](https://example.com/images/vpn-connected.png)
+
+---
+- 權限問題：加 `sudo`。
+- 套件錯誤修正：
+
+```bash
+sudo apt --fix-broken install
+```
+
+- 錯誤訊息不懂可複製給助教或 ChatGPT 協助。
+
+
+
 ---
 
 附註與錯誤排解
