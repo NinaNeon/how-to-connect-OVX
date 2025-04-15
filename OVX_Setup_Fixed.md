@@ -27,7 +27,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 ```
 ![image](https://github.com/user-attachments/assets/38f974cf-4dd7-4a26-a7a2-741d1c0b2a2a)
-也可以去網站[安裝Chrome官網：自動偵測您的作業系統](https://www.google.com.tw/chrome/browser/desktop/index.html )安裝
+也可以去網站[安裝Chrome官網：自動偵測您的作業系統](https://www.google.com.tw/chrome/browser/desktop/index.html )下載，打開 Terminal，貼上以下指令安裝 Chrome
 ```bash
 cd ~/Downloads
 sudo apt install ./google-chrome-stable_current_amd64.deb
@@ -38,20 +38,33 @@ sudo apt install ./google-chrome-stable_current_amd64.deb
 ---
 
 ## 步驟二：安裝並登入 Nucleus Launcher
+建議參考以下網站教學：
+![image](https://github.com/user-attachments/assets/58629c13-b0f4-4243-b8d9-da6a8e20ff85)
+[ NVIDIA Omniverse launcher下载](https://blog.csdn.net/AmbitiousTyj/article/details/139855388)
 
-1. 開啟 Chrome，前往：
-   https://www.nvidia.com/en-us/omniverse/download/
+1. 開啟 Chrome，前往：[  Nucleus Launcher官網](https://www.nvidia.com/en-us/omniverse/)
+![image](https://github.com/user-attachments/assets/34389b54-9582-440e-a8b6-f0961cf002a0)
 
-2. 點選下載 Nucleus Launcher for Linux。
+2.點Start Developing
 
-3. 下載後解壓縮並執行。
+3.輸入帳號密碼
 
-4. 詳細步驟參考官方教學文件：
+![image](https://github.com/user-attachments/assets/7d5c63d6-166a-4167-8587-d28f34959ef7)
+
+4.可以在這個地方找到 Nucleus Launcher 別下載Kit SDK那個不對
+
+![image](https://github.com/user-attachments/assets/f91a6ce5-a9e6-42eb-b3e9-c63ae164f59f)
+![image](https://github.com/user-attachments/assets/c89aafad-7442-4e3e-83c9-e80569018985)
+5. 點選下載 Nucleus Launcher for Linux。
+
+6. 下載後解壓縮並執行。
+
+7. 詳細步驟參考官方教學文件：
    https://docs.omniverse.nvidia.com/launcher/latest/install-guide-linux.html
 
-5. 第一次開啟時會要求登入（使用公司提供帳號密碼）。
+8. 第一次開啟時會要求登入（使用公司提供帳號密碼）。
 
-6. 登入後使用方式：
+9. 登入後使用方式：
    檔案總管中選檔案，滑鼠右鍵可選「上傳」至伺服器。
 
 ![nucleus-launcher-login](https://example.com/images/nucleus-launcher-login.png)
