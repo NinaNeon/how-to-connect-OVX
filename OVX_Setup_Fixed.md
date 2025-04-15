@@ -145,6 +145,13 @@ http://farm.tpe1.local/queue/management/dashboard/
 
 ## 步驟五：登入Nucleus Launcher
 
+![image](https://github.com/user-attachments/assets/34ed8e74-157f-4bdb-9f69-efd7394c0ee6)
+connect to server 中填入伺服器地址
+
+```bash
+nucleus.tpe1.loacl
+```
+
 10. connect to server時會要求登入（使用公司提供帳號密碼）。密碼nvidia
 
 
@@ -164,21 +171,9 @@ http://farm.tpe1.local/queue/management/dashboard/
 
 
 
-4. 中斷連線：
 
-```bash
-openvpn3 session-manage --config config.ovpn --disconnect
-```
 
-5. 開機後手動連線 VPN：
 
-```bash
-openvpn3 session-start --config config.ovpn
-```
-
-![vpn-connected](https://example.com/images/vpn-connected.png)
-
----
 
 ## 步驟五：啟動 Omniverse Launcher（Terminal）
 
@@ -239,6 +234,24 @@ docker push registry.ovx.nvidia.com/your_project/my_image:latest
 
 ## 附註與錯誤排解
 
+
+
+
+4. 中斷連線：
+
+```bash
+openvpn3 session-manage --config config.ovpn --disconnect
+```
+
+5. 開機後手動連線 VPN：
+
+```bash
+openvpn3 session-start --config config.ovpn
+```
+
+![vpn-connected](https://example.com/images/vpn-connected.png)
+
+---
 - 權限問題：加 `sudo`。
 - 套件錯誤修正：
 
