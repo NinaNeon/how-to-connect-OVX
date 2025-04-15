@@ -26,10 +26,14 @@
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 ```
+![image](https://github.com/user-attachments/assets/38f974cf-4dd7-4a26-a7a2-741d1c0b2a2a)
+也可以去網站[ ](https://www.google.com.tw/chrome/browser/desktop/index.html )安裝
+```bash
+cd ~/Downloads
+sudo apt install ./google-chrome-stable_current_amd64.deb
+```
 
 2. 安裝完成後，可從應用程式搜尋 `Google Chrome` 並打開。
-
-![chrome-install](https://example.com/images/chrome-install.png)
 
 ---
 
