@@ -27,7 +27,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 ```
 ![image](https://github.com/user-attachments/assets/38f974cf-4dd7-4a26-a7a2-741d1c0b2a2a)
-也可以去網站[ ](https://www.google.com.tw/chrome/browser/desktop/index.html )安裝
+也可以去網站[安裝Chrome官網：自動偵測您的作業系統](https://www.google.com.tw/chrome/browser/desktop/index.html )安裝
 ```bash
 cd ~/Downloads
 sudo apt install ./google-chrome-stable_current_amd64.deb
