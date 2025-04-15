@@ -89,9 +89,13 @@ sudo apt-get install -y jq
 
 ```
 
-10.新建secret資料夾 放入從
+
+10.在omni-farm-isaac新建secret資料夾
 
 ![image](https://github.com/user-attachments/assets/4b2b1c2a-4ff6-4c98-8999-41bcf684a8fe)
+
+放入從
+![image](https://github.com/user-attachments/assets/7da73242-5d58-4a4b-aae9-149aa0818db9)
 
 下載的env.sh和client.ovpn
 
