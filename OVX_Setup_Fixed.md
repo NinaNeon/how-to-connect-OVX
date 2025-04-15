@@ -16,6 +16,9 @@
 【两分半钟完成VMware安装及Linux-Ubuntu安装（全程无废话）】 https://www.bilibili.com/video/BV1W34y1k7ge/?share_source=copy_web&vd_source=7aae493e7da36f090c4c02123b0dd11b
 
 ![image](https://github.com/user-attachments/assets/86da96fc-7baf-46d7-8619-dad22b691722)
+
+如上圖這樣就是好了
+
 ---
 
 ## 步驟一：安裝 Google Chrome
