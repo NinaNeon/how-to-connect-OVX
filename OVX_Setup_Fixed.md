@@ -148,15 +148,15 @@ http://farm.tpe1.local/queue/management/dashboard/
 10. connect to server時會要求登入（使用公司提供帳號密碼）。密碼nvidia
 
 
-   ![image](https://github.com/user-attachments/assets/91cd1ce5-3c77-4bd0-a100-6b97ccbcff44)
+![image](https://github.com/user-attachments/assets/91cd1ce5-3c77-4bd0-a100-6b97ccbcff44)
 
 ![image](https://github.com/user-attachments/assets/ab58f87d-c725-47d7-8c19-36fa2e53d063)
    
 
-11. 登入後使用方式：
+11. 登入後使用方式：在project資料夾內建立個人資料夾
    滑鼠右鍵可選「上傳」至伺服器。
 
-![nucleus-launcher-login](https://example.com/images/nucleus-launcher-login.png)
+![image](https://github.com/user-attachments/assets/ee35cfbc-cc47-4051-a4cd-eb27e61c14fa)
 
 ---
 
