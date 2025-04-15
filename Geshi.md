@@ -322,3 +322,8 @@ sudo apt --fix-broken install
 ---
 
 如需進一步協助，請聯絡你的助教或管理員。
+
+![image](https://github.com/user-attachments/assets/99af69d0-fb72-4cbe-8e49-2b44656a8a02)
+![image](https://github.com/user-attachments/assets/17c48f23-a1a7-4e0b-bba0-ed102f8095e0)
+![image](https://github.com/user-attachments/assets/98d30341-4527-414b-8a73-dc8d229f4b6b)
+
