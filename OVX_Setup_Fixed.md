@@ -178,6 +178,12 @@ nucleus.tpe1.loacl
 
 ---
 ```bash
+docker tag nina/defect-diffusion:latest ninaneon/defect-diffusion:latest
+docker login
+docker push ninaneon/defect-diffusion:latest
+```
+
+```bash
 scripts/submit_task.sh diffusion-job "/run.sh \
   --download-src 'omniverse://nucleus.tpe1.local/Projects/alex' \
   --download-dest '/src/alex' \
