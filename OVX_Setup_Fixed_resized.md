@@ -198,7 +198,11 @@ nucleus.tpe1.loacl
 <img src="https://github.com/user-attachments/assets/ee35cfbc-cc47-4051-a4cd-eb27e61c14fa" alt="image" width="400"/>
 
 ---
-
+```bash
+docker tag nina/defect-diffusion:latest ninaneon/defect-diffusion:latest
+docker login
+docker push ninaneon/defect-diffusion:latest
+```
 ```bash
 scripts/submit_task.sh diffusion-job "/run.sh \
   --download-src 'omniverse://nucleus.tpe1.local/Projects/alex' \
