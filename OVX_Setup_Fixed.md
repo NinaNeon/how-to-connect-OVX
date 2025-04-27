@@ -177,15 +177,25 @@ nucleus.tpe1.loacl
 ![image](https://github.com/user-attachments/assets/ee35cfbc-cc47-4051-a4cd-eb27e61c14fa)
 
 ---
+可能會用到的：改名
 ```bash
 docker tag nina/defect-diffusion:latest ninaneon/defect-diffusion:latest
+```
+推docker
+```bash
 docker login
 docker push ninaneon/defect-diffusion:latest
 ```
+
+
+submit task
 ```bash
 scripts/save_job.sh diffusion-job
 scripts/load_job.sh
 ```
+
+單gpu跑某個description(image-text pair)的json
+
 ```bash
 scripts/submit_task.sh diffusion-job "/run.sh \
   --download-src 'omniverse://nucleus.tpe1.local/Projects/alex' \
