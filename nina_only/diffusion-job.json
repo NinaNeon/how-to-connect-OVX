@@ -1,0 +1,65 @@
+{
+  "job_type": "base",
+  "command": "bash",
+  "args": [ "-c" ],
+  "job_spec_path": "null",
+  "capacity_requirements": {
+    "resource_limits": {
+      "nvidia.com/gpu": 1
+    },
+    "env": [
+      {
+        "name": "NODE_NAME",
+        "valueFrom": {
+          "fieldRef": {
+            "fieldPath": "spec.nodeName"
+          }
+        }
+      }
+    ],
+    "env_from": [
+      {
+        "secretRef": {
+          "name": "nucleus-secret"
+        }
+      }
+    ],
+    "imagePullPolicy": "Always",
+    "active_deadline_seconds": 864000,
+    "affinity": {
+      "podAffinity": {
+        "preferredDuringSchedulingIgnoredDuringExecution": [
+          {
+            "weight": 1,
+            "podAffinityTerm": {
+              "labelSelector": {
+                "matchExpressions": [
+                  {
+                    "key": "ov-farm",
+                    "operator": "Exists"
+                  }
+                ]
+              },
+              "topologyKey": "kubernetes.io/hostname"
+            }
+          }
+        ]
+      }
+    },
+    "dnsConfig": {
+      "nameservers": [
+        "8.8.8.8",
+        "8.8.4.4"
+      ]
+    },
+    "hostIPC": true
+  },
+  "container": "ninaneon/defect-diffusion:latest",
+  "allowed_args": {
+    "args": {
+      "arg": "",
+      "default": "echo hi",
+      "separator": ""
+    }
+  }
+}
