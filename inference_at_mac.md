@@ -52,11 +52,13 @@ pip install diffusers transformers
 ```bash
 from diffusers import StableDiffusionPipeline
 import torch
+
 pipe = StableDiffusionPipeline.from_pretrained(
-    "./Documents/my-trained-sd-model",   # 路徑換成你的實際路徑
+    "/Users/nina/Documents/cat",   # 🔥 這裡改成你的模型根目錄！
     torch_dtype=torch.float16,
     safety_checker=None,  # 如果沒有安全檢查器可以關掉
 )
+
 device = "mps" if torch.backends.mps.is_available() else "cpu"
 pipe = pipe.to(device)
 prompt = "a photo of crack on the wall"
