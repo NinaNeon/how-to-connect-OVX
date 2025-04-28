@@ -8,12 +8,12 @@
 
 打開 Terminal：
 
-# 建議用 Homebrew 安裝 python 3.10+
+### 建議用 Homebrew 安裝 python 3.10+
 
 ```bash
 brew install python@3.10
 ```
-# 建一個新的虛擬環境（避免污染系統環境）
+### 建一個新的虛擬環境（避免污染系統環境）
 
 ```bash
 python3 -m venv myenv
@@ -25,15 +25,19 @@ source myenv/bin/activate
 ⸻
 
 第二步：安裝適合 M1 的 Torch 和 Diffusers
+### 確認還在 myenv
+### 強制用 myenv 的 pip 安裝 torch
 
-# 先升級 pip
-# 安裝 MPS 版 PyTorch（官方支持 M1 的版本）
-# 安裝 diffusers 和其他推理需要的包
 
 ```bash
-pip install --upgrade pip
-pip install torch torchvision torchaudio
-pip install diffusers transformers
+source ~/myenv/bin/activate
+
+/Users/nina/myenv/bin/pip install diffusers transformers
+/Users/nina/myenv/bin/pip install torch torchvision torchaudio
+
+cd ~/Documents/cat
+python inference.py
+
 ```
 ✅ 注意這裡不用特別裝 cuda，因為 M1 不支援 cuda，用 MPS 就可以！
 
