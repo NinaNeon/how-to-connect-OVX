@@ -92,3 +92,11 @@ python inference.py
 第一次推理會比較慢	因為 MPS 會 compile kernel
 記憶體吃得還行（8G~12G）	你的 16G RAM夠用，安心
 不要期待跟 A100 一樣快	但比單純CPU要快很多（3～5倍速度提升）
+
+
+下次開
+```bash
+cd ~/Documents/cat500
+source ~/myenv/bin/activate
+python inference_cat500.py
+```
