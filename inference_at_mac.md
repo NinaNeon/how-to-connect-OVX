@@ -75,6 +75,7 @@ image.save("output.png")
 
 第五步：執行推理！
 ```bash
+cd ~/Documents/cat
 python inference.py
 ```
 成功的話，會在你當前資料夾下產生一張 output.png 圖片！
