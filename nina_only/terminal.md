@@ -116,6 +116,7 @@ pip install accelerate
 nina@ninadeMacBook-Air cat500_classifier % 
 
 
+# segmentation
 ＃segmentation
 
 nina@ninadeMacBook-Air seg % python3 train_segmentation_fixed.py
