@@ -215,6 +215,16 @@ scripts/submit_task.sh diffusion-job "/run.sh \
 "ten_1gpu"
 ```
 
+```bash
+scripts/submit_task.sh diffusion-job "/run.sh \
+  --download-src 'omniverse://nucleus.tpe1.local/Projects/alex' \
+  --download-dest '/src/alex' \
+  --upload-src '/src/alex/result/cat' \
+  --upload-dest 'omniverse://nucleus.tpe1.local/Projects/alex/result/cat' \
+  'python3 -u /src/alex/train.py --pretrained_model_name_or_path /src/alex/8gpu_ep100 --data_files /src/alex/cat.json --resolution 512 --train_batch_size 16 --gradient_accumulation_steps 8 --learning_rate 1e-7 --mixed_precision fp16 --num_train_epochs 50 --use_ema --image_column file_name --caption_column text --output_dir /src/alex/result/cat'" \
+"cat_1gpu"
+```
+
 <img width="687" alt="截圖 2025-04-28 凌晨12 10 46" src="https://github.com/user-attachments/assets/c8dd36a2-307c-4dea-8d12-9ee1903234f8" />
 
 <img width="678" alt="截圖 2025-04-28 凌晨12 11 16" src="https://github.com/user-attachments/assets/cffd2ca4-bda4-47dd-8fca-50fe0d86ea8d" />
