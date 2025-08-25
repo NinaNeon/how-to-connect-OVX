@@ -160,7 +160,7 @@ http://farm.tpe1.local/queue/management/dashboard/
 ![image](https://github.com/user-attachments/assets/34ed8e74-157f-4bdb-9f69-efd7394c0ee6)
 
 ```bash
-nucleus.tpe1.loacl
+nucleus.tpe1.local
 ```
 
 16. connect to server時會要求登入（使用公司提供帳號密碼）。密碼nvidia
